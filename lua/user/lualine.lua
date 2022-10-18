@@ -23,7 +23,7 @@ lualine.setup({
 		},
 		globalstatus = true,
 	},
-	extensions = { "nvim-tree", "toggleterm", "quickfix", "nvim-dap-ui", "man" },
+	extensions = { "nvim-tree" },
 	sections = {
 		-- lualine_c = {
 		--   "filename",
