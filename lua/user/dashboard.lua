@@ -12,36 +12,9 @@ db.custom_footer = {
 
 db.custom_center = {
 	{
-		icon = "🗃️  ",
-		desc = "Projects                            ",
-		action = "Telescope projects",
-	},
-	{
-		-- icon = "📎  ",
-		icon = "📺  ",
-		desc = "Recently files                      ",
-		action = "Telescope oldfiles",
-	},
-	{
-		icon = "🔍️  ",
-		desc = "Find file                           ",
-		action = "Telescope find_files",
-	},
-	{
 		icon = "📄  ",
 		desc = "New file                            ",
 		action = "DashboardNewFile",
-	},
-	{
-		icon = "🕹️  ",
-		desc = "Edit keybindings                    ",
-		action = "edit" .. keybindAlia .. "/lua/keybindingAlias.lua",
-	},
-	{
-		-- icon = "📑  ",
-		icon = "📻  ",
-		desc = "Edit Projects                       ",
-		action = "edit ~/.local/share/nvim/project_nvim/project_history",
 	},
 	-- {
 	--   icon = "  ",
