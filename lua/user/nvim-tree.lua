@@ -3,7 +3,8 @@ if not status_ok then
   return
 end
 
-require 'nvim-tree'.setup {
-  open_on_setup = true,
-  open_on_setup_file = true
-}
+nvim_tree.setup {}
+
+vim.keymap.set("n", "<space>s", function()
+  return require("nvim-tree").toggle(false, true)
+  end, { silent = true, desc = "toggle nvim-tree" })
