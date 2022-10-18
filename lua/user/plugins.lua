@@ -59,6 +59,8 @@ return packer.startup(function(use)
 -- git
   use { "lewis6991/gitsigns.nvim" }
 
+-- impatient
+  use { "lewis6991/impatient.nvim" }
 -- nvim-cmp
   use { "hrsh7th/nvim-cmp" } -- The completion plugin
   use { "hrsh7th/cmp-buffer" } -- buffer completions
