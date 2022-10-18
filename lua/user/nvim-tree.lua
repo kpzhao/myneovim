@@ -3,11 +3,7 @@ if not status_ok then
   return
 end
 
-  require"nvim-tree".setup {
-  --[[  
-  -- 不显示 git 状态图标
-    git = {
-        enable = false
-    }
-  --]]
+require 'nvim-tree'.setup {
+  open_on_setup = true,
+  open_on_setup_file = true
 }
