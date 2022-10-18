@@ -54,7 +54,7 @@ return packer.startup(function(use)
   use { "ellisonleao/gruvbox.nvim" , requires = "rktjmp/lush.nvim" }
   use 'shaunsingh/nord.nvim'  -- nord theme
 -- dashboard
-  -- use {'glepnir/dashboard-nvim'}
+  use {'glepnir/dashboard-nvim'}
 
 -- git
   use { "lewis6991/gitsigns.nvim" }
