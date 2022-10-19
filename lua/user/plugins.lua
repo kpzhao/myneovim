@@ -40,6 +40,10 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
+
+-- it is recommended to put impatient.nvim before any other plugins
+  use { "lewis6991/impatient.nvim", config = [[require('impatient')]] }
+
   use { "wbthomason/packer.nvim" } -- Have packer manage itself
 
 -- bufferline
@@ -53,14 +57,10 @@ return packer.startup(function(use)
 --  use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
   use { "ellisonleao/gruvbox.nvim" , requires = "rktjmp/lush.nvim" }
   use 'shaunsingh/nord.nvim'  -- nord theme
+
 -- dashboard
   use {'glepnir/dashboard-nvim'}
 
--- git
-  use { "lewis6991/gitsigns.nvim" }
-
--- impatient
-  use { "lewis6991/impatient.nvim" }
 -- nvim-cmp
   use { "hrsh7th/nvim-cmp" } -- The completion plugin
   use { "hrsh7th/cmp-buffer" } -- buffer completions
