@@ -42,7 +42,7 @@ packer.init({
 return packer.startup(function(use)
 
 -- it is recommended to put impatient.nvim before any other plugins
-  use { "lewis6991/impatient.nvim", config = [[require('impatient')]] }
+--  use { "lewis6991/impatient.nvim", config = [[require('impatient')]] }
 
   use { "wbthomason/packer.nvim" } -- Have packer manage itself
 
@@ -94,6 +94,9 @@ return packer.startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = { {'nvim-lua/plenary.nvim'} }
       }
   use 'nvim-telescope/telescope-media-files.nvim'
+
+-- WhichKey
+  use { "folke/which-key.nvim" }
 	-- Telescope
 --	use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
 

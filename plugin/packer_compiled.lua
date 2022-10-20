@@ -129,12 +129,6 @@ _G.packer_plugins = {
     path = "/home/zhao/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
-  ["impatient.nvim"] = {
-    config = { "require('impatient')" },
-    loaded = true,
-    path = "/home/zhao/.local/share/nvim/site/pack/packer/start/impatient.nvim",
-    url = "https://github.com/lewis6991/impatient.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/zhao/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -209,14 +203,15 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/zhao/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/home/zhao/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: impatient.nvim
-time([[Config for impatient.nvim]], true)
-require('impatient')
-time([[Config for impatient.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
